@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "interview_problems"
+			"path" : "food_lines"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 7,
 				"parent" : 0
 			}
 		]
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "interview_problems::@6890427a1f51a3e7e1df",
+	"id" : "food_lines::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -72,8 +72,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "interview_problems",
-	"nameOnDisk" : "interview_problems",
+	"name" : "food_lines",
+	"nameOnDisk" : "food_lines",
 	"paths" : 
 	{
 		"build" : ".",
@@ -94,7 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "problems/food_lines.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
