@@ -68,6 +68,37 @@ build food_lines: CXX_EXECUTABLE_LINKER__food_lines_Debug CMakeFiles/food_lines.
   TARGET_FILE = food_lines
   TARGET_PDB = food_lines.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target unique_snowflakes
+
+
+#############################################
+# Order-only phony target for unique_snowflakes
+
+build cmake_object_order_depends_target_unique_snowflakes: phony || CMakeFiles/unique_snowflakes.dir
+
+build CMakeFiles/unique_snowflakes.dir/problems/unique_snowflakes.cpp.o: CXX_COMPILER__unique_snowflakes_Debug /Users/villaleobos/Documents/Projects/interview_problems/problems/unique_snowflakes.cpp || cmake_object_order_depends_target_unique_snowflakes
+  DEP_FILE = CMakeFiles/unique_snowflakes.dir/problems/unique_snowflakes.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/unique_snowflakes.dir
+  OBJECT_FILE_DIR = CMakeFiles/unique_snowflakes.dir/problems
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target unique_snowflakes
+
+
+#############################################
+# Link the executable unique_snowflakes
+
+build unique_snowflakes: CXX_EXECUTABLE_LINKER__unique_snowflakes_Debug CMakeFiles/unique_snowflakes.dir/problems/unique_snowflakes.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/unique_snowflakes.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = unique_snowflakes
+  TARGET_PDB = unique_snowflakes.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -102,7 +133,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/villaleobos/Documents/Projects/interview_problems/cmake-build-debug
 
-build all: phony food_lines
+build all: phony food_lines unique_snowflakes
 
 # =============================================================================
 # Built-in targets
