@@ -3,5 +3,5 @@ project(interview_problems)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(food_lines problems/food_lines.cpp lib/debug.h)
+add_executable(food_lines problems/food_lines.cpp)
 add_executable(unique_snowflakes problems/unique_snowflakes.cpp)
