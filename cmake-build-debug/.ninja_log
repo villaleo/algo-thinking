@@ -3,6 +3,10 @@
 405	443	1673030503099639972	food_lines	122b5c1c8d0e57d5
 4	336	1673374659072314536	CMakeFiles/main.dir/main.cpp.o	5a0370b4d222edbe
 343	378	1673221399250534323	unique_snowflakes	9cb0abc4e8f725a6
+0	51	1673471751133007606	build.ninja	bb1ab94dbbd7f7e2
 1	404	1673030503058795443	CMakeFiles/food_lines.dir/problems/food_lines.cpp.o	22f08dcf8c3c8cb7
-0	51	1673376019184558795	build.ninja	bb1ab94dbbd7f7e2
+4	389	1673468222764655637	CMakeFiles/compound_words.dir/problems/compound_words.cpp.o	6d521a9fb40847b
 336	370	1673374659108585158	main	667f8dfc83f0feab
+389	449	1673468222827302021	compound_words	b0888a06fe291807
+3	319	1673469709950170165	CMakeFiles/constructable_word.dir/problems/constructable_word.cpp.o	d836cc08cb2e2462
+320	350	1673469709981945652	constructable_word	4852b355a90335a

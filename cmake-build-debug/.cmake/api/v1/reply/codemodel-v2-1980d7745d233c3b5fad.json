@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,12 +33,20 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "constructable_word::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-constructable_word-Debug-ec45f8e71550ae610e0b.json",
+					"name" : "constructable_word",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "food_lines::@6890427a1f51a3e7e1df",

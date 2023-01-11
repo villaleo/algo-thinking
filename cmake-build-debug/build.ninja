@@ -99,6 +99,37 @@ build unique_snowflakes: CXX_EXECUTABLE_LINKER__unique_snowflakes_Debug CMakeFil
   TARGET_FILE = unique_snowflakes
   TARGET_PDB = unique_snowflakes.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target constructable_word
+
+
+#############################################
+# Order-only phony target for constructable_word
+
+build cmake_object_order_depends_target_constructable_word: phony || CMakeFiles/constructable_word.dir
+
+build CMakeFiles/constructable_word.dir/problems/constructable_word.cpp.o: CXX_COMPILER__constructable_word_Debug /Users/villaleobos/Documents/Projects/interview_problems/problems/constructable_word.cpp || cmake_object_order_depends_target_constructable_word
+  DEP_FILE = CMakeFiles/constructable_word.dir/problems/constructable_word.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/constructable_word.dir
+  OBJECT_FILE_DIR = CMakeFiles/constructable_word.dir/problems
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target constructable_word
+
+
+#############################################
+# Link the executable constructable_word
+
+build constructable_word: CXX_EXECUTABLE_LINKER__constructable_word_Debug CMakeFiles/constructable_word.dir/problems/constructable_word.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/constructable_word.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = constructable_word
+  TARGET_PDB = constructable_word.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -133,7 +164,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/villaleobos/Documents/Projects/interview_problems/cmake-build-debug
 
-build all: phony food_lines unique_snowflakes
+build all: phony food_lines unique_snowflakes constructable_word
 
 # =============================================================================
 # Built-in targets
