@@ -17,7 +17,9 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4
 					]
 				}
 			],
@@ -34,12 +36,28 @@
 					[
 						0,
 						1,
-						2
+						2,
+						3,
+						4
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "compound_words_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-compound_words_c-Debug-d101c47b6128ea3eb8c2.json",
+					"name" : "compound_words_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "compound_words_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-compound_words_cpp-Debug-0c788279aba85f3379b1.json",
+					"name" : "compound_words_cpp",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "constructable_word::@6890427a1f51a3e7e1df",

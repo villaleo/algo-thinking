@@ -130,6 +130,68 @@ build constructable_word: CXX_EXECUTABLE_LINKER__constructable_word_Debug CMakeF
   TARGET_FILE = constructable_word
   TARGET_PDB = constructable_word.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target compound_words_c
+
+
+#############################################
+# Order-only phony target for compound_words_c
+
+build cmake_object_order_depends_target_compound_words_c: phony || CMakeFiles/compound_words_c.dir
+
+build CMakeFiles/compound_words_c.dir/problems/compound_words.c.o: C_COMPILER__compound_words_c_Debug /Users/villaleobos/Documents/Projects/interview_problems/problems/compound_words.c || cmake_object_order_depends_target_compound_words_c
+  DEP_FILE = CMakeFiles/compound_words_c.dir/problems/compound_words.c.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/compound_words_c.dir
+  OBJECT_FILE_DIR = CMakeFiles/compound_words_c.dir/problems
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target compound_words_c
+
+
+#############################################
+# Link the executable compound_words_c
+
+build compound_words_c: C_EXECUTABLE_LINKER__compound_words_c_Debug CMakeFiles/compound_words_c.dir/problems/compound_words.c.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/compound_words_c.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = compound_words_c
+  TARGET_PDB = compound_words_c.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target compound_words_cpp
+
+
+#############################################
+# Order-only phony target for compound_words_cpp
+
+build cmake_object_order_depends_target_compound_words_cpp: phony || CMakeFiles/compound_words_cpp.dir
+
+build CMakeFiles/compound_words_cpp.dir/problems/compound_words.cpp.o: CXX_COMPILER__compound_words_cpp_Debug /Users/villaleobos/Documents/Projects/interview_problems/problems/compound_words.cpp || cmake_object_order_depends_target_compound_words_cpp
+  DEP_FILE = CMakeFiles/compound_words_cpp.dir/problems/compound_words.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/compound_words_cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles/compound_words_cpp.dir/problems
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target compound_words_cpp
+
+
+#############################################
+# Link the executable compound_words_cpp
+
+build compound_words_cpp: CXX_EXECUTABLE_LINKER__compound_words_cpp_Debug CMakeFiles/compound_words_cpp.dir/problems/compound_words.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk
+  OBJECT_DIR = CMakeFiles/compound_words_cpp.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = compound_words_cpp
+  TARGET_PDB = compound_words_cpp.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -164,7 +226,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/villaleobos/Documents/Projects/interview_problems/cmake-build-debug
 
-build all: phony food_lines unique_snowflakes constructable_word
+build all: phony food_lines unique_snowflakes constructable_word compound_words_c compound_words_cpp
 
 # =============================================================================
 # Built-in targets
