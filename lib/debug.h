@@ -63,4 +63,23 @@ std::ostream& operator<<(std::ostream& os, const std::array<Type, n>& array) {
     return os;
 }
 
+#include <set>
+
+template <
+    typename Key,
+    typename Comp = std::less<Key>,
+    typename Alloc = std::allocator<Key>
+>
+auto operator<<(std::ostream& os, const std::set<Key, Comp, Alloc>& set) -> std::ostream& {
+    os << '{';
+    auto iter = set.begin();
+    while (iter != set.end()) {
+        os << *iter;
+        iter++;
+        if (iter != set.end()) os << ", ";
+    }
+    os << '}';
+    return os;
+}
+
 #endif //INTERVIEW_PROBLEMS_DEBUG_H
