@@ -5,6 +5,8 @@
 #ifndef INTERVIEW_PROBLEMS_DEBUG_H
 #define INTERVIEW_PROBLEMS_DEBUG_H
 
+#define dbg(x) std::cout << (#x) << " = " << x << '\n'
+
 #include <iostream>
 #include <vector>
 
