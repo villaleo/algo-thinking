@@ -19,7 +19,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -38,7 +39,8 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					]
 				}
 			],
@@ -63,6 +65,13 @@
 					"id" : "constructable_word::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-constructable_word-Debug-ec45f8e71550ae610e0b.json",
 					"name" : "constructable_word",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "delete_a_letter::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-delete_a_letter-Debug-c1e453b074bdd9beaa49.json",
+					"name" : "delete_a_letter",
 					"projectIndex" : 0
 				},
 				{

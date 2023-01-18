@@ -3,5 +3,6 @@
 /Users/villaleobos/Documents/Projects/interview_problems/cmake-build-debug/CMakeFiles/constructable_word.dir
 /Users/villaleobos/Documents/Projects/interview_problems/cmake-build-debug/CMakeFiles/compound_words_c.dir
 /Users/villaleobos/Documents/Projects/interview_problems/cmake-build-debug/CMakeFiles/compound_words_cpp.dir
+/Users/villaleobos/Documents/Projects/interview_problems/cmake-build-debug/CMakeFiles/delete_a_letter.dir
 /Users/villaleobos/Documents/Projects/interview_problems/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/villaleobos/Documents/Projects/interview_problems/cmake-build-debug/CMakeFiles/rebuild_cache.dir
