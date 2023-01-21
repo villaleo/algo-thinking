@@ -1,4 +1,4 @@
-package problems
+package halloween_haul
 
 /// Problem source: https://dmoj.ca/problem/dwite12c1p4
 
@@ -9,17 +9,17 @@ import (
 	"os"
 )
 
-type Node struct {
+type NeighborhoodNode struct {
 	candy int
-	left  *Node
-	right *Node
+	left  *NeighborhoodNode
+	right *NeighborhoodNode
 }
 
 const TestCases = 5
 
-func HalloweenHaulSolution() {
+func Solution() {
 	reader := bufio.NewReader(os.Stdin)
-	var tree *Node
+	var tree *NeighborhoodNode
 	for i := 0; i < TestCases; i++ {
 		line, err := reader.ReadString('\n')
 		if err != nil {
@@ -35,8 +35,8 @@ func HalloweenHaulSolution() {
 	}
 }
 
-func readTreeHelper(line string, pos *int) *Node {
-	tree := &Node{}
+func readTreeHelper(line string, pos *int) *NeighborhoodNode {
+	tree := &NeighborhoodNode{}
 	if line[*pos] == '(' {
 		*pos++
 		tree.left = readTreeHelper(line, pos)
@@ -55,30 +55,30 @@ func readTreeHelper(line string, pos *int) *Node {
 	}
 }
 
-func readTree(line string) *Node {
+func readTree(line string) *NeighborhoodNode {
 	var position int
 	return readTreeHelper(line, &position)
 }
 
-func (root *Node) isHouse() bool {
+func (root *NeighborhoodNode) isHouse() bool {
 	return root.left == nil && root.right == nil
 }
 
-func (root *Node) countCandy() int {
+func (root *NeighborhoodNode) countCandy() int {
 	if root.isHouse() {
 		return root.candy
 	}
 	return root.left.countCandy() + root.right.countCandy()
 }
 
-func (root *Node) calculateEdgeCount() int {
+func (root *NeighborhoodNode) calculateEdgeCount() int {
 	if root.isHouse() {
 		return 0
 	}
 	return root.left.calculateEdgeCount() + root.right.calculateEdgeCount() + 4
 }
 
-func (root *Node) calculateHeight() int {
+func (root *NeighborhoodNode) calculateHeight() int {
 	if root.isHouse() {
 		return 0
 	}

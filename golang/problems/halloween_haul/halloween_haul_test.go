@@ -1,4 +1,4 @@
-package problems
+package halloween_haul
 
 import (
 	"github.com/stretchr/testify/assert"
@@ -6,35 +6,35 @@ import (
 )
 
 var (
-	treeA = &Node{
-		left:  &Node{candy: 72},
-		right: &Node{candy: 3},
+	treeA = &NeighborhoodNode{
+		left:  &NeighborhoodNode{candy: 72},
+		right: &NeighborhoodNode{candy: 3},
 	}
-	treeB = &Node{
-		left:  &Node{candy: 4},
-		right: &Node{candy: 9},
+	treeB = &NeighborhoodNode{
+		left:  &NeighborhoodNode{candy: 4},
+		right: &NeighborhoodNode{candy: 9},
 	}
-	treeC = &Node{
+	treeC = &NeighborhoodNode{
 		left:  treeB,
-		right: &Node{candy: 15},
+		right: &NeighborhoodNode{candy: 15},
 	}
-	treeD = &Node{
+	treeD = &NeighborhoodNode{
 		left:  treeC,
-		right: &Node{candy: 2},
+		right: &NeighborhoodNode{candy: 2},
 	}
-	treeE = &Node{
-		left:  &Node{candy: 6},
+	treeE = &NeighborhoodNode{
+		left:  &NeighborhoodNode{candy: 6},
 		right: treeD,
 	}
-	treeF = &Node{
+	treeF = &NeighborhoodNode{
 		left:  treeA,
 		right: treeE,
 	}
-	treeG = &Node{
-		left:  &Node{candy: 7},
-		right: &Node{candy: 41},
+	treeG = &NeighborhoodNode{
+		left:  &NeighborhoodNode{candy: 7},
+		right: &NeighborhoodNode{candy: 41},
 	}
-	treeH = &Node{
+	treeH = &NeighborhoodNode{
 		left:  treeF,
 		right: treeG,
 	}
