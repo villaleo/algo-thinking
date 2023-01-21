@@ -1,7 +1,9 @@
 package main
 
-import "golang/problems"
+import (
+	"golang/problems/descendant_distance"
+)
 
 func main() {
-	problems.HalloweenHaulSolution()
+	descendant_distance.Solution()
 }
