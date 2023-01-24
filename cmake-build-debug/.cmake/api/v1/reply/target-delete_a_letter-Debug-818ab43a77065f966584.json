@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "compound_words_cpp"
+			"path" : "delete_a_letter"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 10,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -38,7 +38,7 @@
 					"fragment" : "-g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -fcolor-diagnostics"
 				},
 				{
-					"fragment" : "-std=gnu++17"
+					"fragment" : "-std=gnu++20"
 				}
 			],
 			"language" : "CXX",
@@ -48,7 +48,7 @@
 				[
 					1
 				],
-				"standard" : "17"
+				"standard" : "20"
 			},
 			"sourceIndexes" : 
 			[
@@ -56,7 +56,7 @@
 			]
 		}
 	],
-	"id" : "compound_words_cpp::@6890427a1f51a3e7e1df",
+	"id" : "delete_a_letter::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -72,8 +72,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "compound_words_cpp",
-	"nameOnDisk" : "compound_words_cpp",
+	"name" : "delete_a_letter",
+	"nameOnDisk" : "delete_a_letter",
 	"paths" : 
 	{
 		"build" : ".",
@@ -94,7 +94,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "problems/compound_words.cpp",
+			"path" : "problems/delete_a_letter.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
